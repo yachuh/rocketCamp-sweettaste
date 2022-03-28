@@ -1,0 +1,117 @@
+/* banner */
+.banner {
+    margin-bottom: 60px;
+    
+    img {
+        width: 100%; /*這樣對嗎？原本的圖片不夠寬*/
+    }
+}
+
+/* main content */
+/* main - Category List*/
+.productMain {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+    
+    .productCategory {
+        width: 300px;
+
+        h2 {
+            background: $color-primary;
+            color: $color-secondary;
+            text-align: center;
+            padding: 16px 0px;
+            font-size: $fontsize-title;
+        }
+
+        li a {
+            display: block;
+            background: white;
+            text-align: center;
+            font-size: $fontsize-title;
+            padding: 16px 0px;
+            border: 1px solid $color-secondary;
+            border-collapse: collapse;
+
+            &:hover {
+                background: $color-secondary;
+            }
+        }
+    }
+    
+    .productList {
+        width: 620px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            row-gap: 20px;
+
+            li {
+                width: 300px;
+                position: relative; /* 作用？ */  
+            }
+
+            .tag {
+                position: absolute;
+                background: #3F5D45;
+                color: white;
+                font-size: 16px;
+                text-align: left;
+                writing-mode: vertical-lr;
+                letter-spacing: 5px;
+                padding: 10px 10px;
+                left: 20px;
+            }
+            
+            .heart {
+                position: absolute;
+                right: 22px;
+                top: 19px;
+                font-size: 20px;
+            }
+        }
+    }
+
+}
+
+/* main 區塊 - Product List */
+
+.productList-cards .productList-cards-body {
+    border-left: 1px solid #EAF0ED;
+    border-right: 1px solid #EAF0ED;
+    font-size: 20px;
+}
+
+.productList-cards .productList-cards-body h2 {
+    font-weight: 300;
+    text-align: center;
+    padding: 14px 0px;
+    width: 173px;
+    border-right: 1px solid #EAF0ED;
+}
+
+.productList-cards .productList-cards-body span {
+    font-weight: 600;
+    text-align: center;
+    padding: 14px 0px;
+    width: 127px;
+}
+
+
+.productList-cards .productList-cards-cart {
+    display: block;
+    background: #EAF0ED;
+    color: #3F5D45;
+    font-size: 24px;
+    text-align: center;
+    padding: 16px 0px;
+}
+
+.productList-cards li img {
+    width: 300px;
+    height: 315px;
+    object-fit:cover;
+}

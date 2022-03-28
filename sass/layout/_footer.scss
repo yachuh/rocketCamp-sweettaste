@@ -1,0 +1,41 @@
+footer {
+    background: $color-secondary;
+    padding: 30px 122px;
+}
+
+.footerMain {
+
+    img {
+        width: 59.28px;
+    }
+}
+
+.footer-info {
+    img {
+        width: 171.22px;
+    }
+
+    p {
+        margin-top: 115.5px;
+    }
+}
+
+.footerCopyright {
+    margin-top: 30px;
+    gap: 8px;
+
+    img {
+        width: 32px;
+        height: 32px;
+
+        &:hover {
+            color: darken ($color-primary, 10%)
+        }
+    }
+    
+    p {
+        font-family: Times;
+        align-self: flex-end;
+        margin-left: auto;
+    }
+}

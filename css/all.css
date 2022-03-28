@@ -1,0 +1,402 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  color: #3F5D45;
+}
+
+body {
+  margin: 30px auto;
+  font-family: "PingFang TC";
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 940px;
+  margin: 0px auto;
+}
+
+a {
+  color: #3F5D45;
+  text-decoration: none;
+}
+
+.d-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.justify-content-between {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.justify-content-end {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+/* header 區塊 */
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
+}
+
+.header .logo {
+  height: 40px;
+  width: 219.49px;
+}
+
+.header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.header .menu li a {
+  display: block;
+  padding: 10px 30px 8px 30px;
+  text-align: center;
+}
+
+.header .menu li a:hover {
+  background: #3F5D45;
+  color: white;
+}
+
+.pagination {
+  margin-top: 30px;
+}
+
+.pagination a {
+  padding: 16px 24px;
+  border: 1px solid #EAF0ED;
+  border-collapse: collapse;
+  font-size: 1.25rem;
+}
+
+.pagination a:hover {
+  background: #EAF0ED;
+}
+
+.pagination a:active {
+  background: #3F5D45;
+  color: #EAF0ED;
+  border: 1px solid #3F5D45;
+}
+
+footer {
+  background: #EAF0ED;
+  padding: 30px 122px;
+}
+
+.footerMain img {
+  width: 59.28px;
+}
+
+.footer-info img {
+  width: 171.22px;
+}
+
+.footer-info p {
+  margin-top: 115.5px;
+}
+
+.footerCopyright {
+  margin-top: 30px;
+  gap: 8px;
+}
+
+.footerCopyright img {
+  width: 32px;
+  height: 32px;
+}
+
+.footerCopyright img:hover {
+  color: darken #3F5D45, 10%;
+}
+
+.footerCopyright p {
+  font-family: Times;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-left: auto;
+}
+
+.subscribe {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #3F5D45;
+  height: 116px;
+  padding: 0px 122px;
+}
+
+.subscribe-logo {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.subscribe-logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.subscribe-logo span {
+  font-size: 1.25rem;
+  color: #EAF0ED;
+  margin-left: 20px;
+}
+
+.mailInputBox {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #EAF0ED;
+  width: 380px;
+  height: 56px;
+  padding: 16px 0px 16px 20px;
+  position: relative;
+}
+
+.mailInputBox .fa-envelope {
+  color: #3F5D45;
+  font-size: 24px;
+}
+
+.mailInputBox input {
+  background: #EAF0ED;
+  margin-left: 16px;
+  font-size: 1rem;
+  border: none;
+}
+
+.mailInputBox input:focus-visible {
+  outline: none;
+}
+
+.mailInputBox button {
+  background: #FFE180;
+  font-size: 16px;
+  color: #3F5D45;
+  width: 64px;
+  height: 56px;
+  border: none;
+  position: absolute;
+  right: 0px;
+  cursor: pointer;
+}
+
+.mailInputBox button:hover {
+  background-color: #ffd54d;
+  color: #2a3f2e;
+}
+
+/* banner */
+.banner {
+  margin-bottom: 60px;
+}
+
+.banner img {
+  width: 100%;
+  /*這樣對嗎？原本的圖片不夠寬*/
+}
+
+/* main content */
+/* main - Category List*/
+.productMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 60px;
+}
+
+.productMain .productCategory {
+  width: 300px;
+}
+
+.productMain .productCategory h2 {
+  background: #3F5D45;
+  color: #EAF0ED;
+  text-align: center;
+  padding: 16px 0px;
+  font-size: 24px;
+}
+
+.productMain .productCategory li a {
+  display: block;
+  background: white;
+  text-align: center;
+  font-size: 24px;
+  padding: 16px 0px;
+  border: 1px solid #EAF0ED;
+  border-collapse: collapse;
+}
+
+.productMain .productCategory li a:hover {
+  background: #EAF0ED;
+}
+
+.productMain .productList {
+  width: 620px;
+}
+
+.productMain .productList ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  row-gap: 20px;
+}
+
+.productMain .productList ul li {
+  width: 300px;
+  position: relative;
+  /* 作用？ */
+}
+
+.productMain .productList ul .tag {
+  position: absolute;
+  background: #3F5D45;
+  color: white;
+  font-size: 16px;
+  text-align: left;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  letter-spacing: 5px;
+  padding: 10px 10px;
+  left: 20px;
+}
+
+.productMain .productList ul .heart {
+  position: absolute;
+  right: 22px;
+  top: 19px;
+  font-size: 20px;
+}
+
+/* main 區塊 - Product List */
+.productList-cards .productList-cards-body {
+  border-left: 1px solid #EAF0ED;
+  border-right: 1px solid #EAF0ED;
+  font-size: 20px;
+}
+
+.productList-cards .productList-cards-body h2 {
+  font-weight: 300;
+  text-align: center;
+  padding: 14px 0px;
+  width: 173px;
+  border-right: 1px solid #EAF0ED;
+}
+
+.productList-cards .productList-cards-body span {
+  font-weight: 600;
+  text-align: center;
+  padding: 14px 0px;
+  width: 127px;
+}
+
+.productList-cards .productList-cards-cart {
+  display: block;
+  background: #EAF0ED;
+  color: #3F5D45;
+  font-size: 24px;
+  text-align: center;
+  padding: 16px 0px;
+}
+
+.productList-cards li img {
+  width: 300px;
+  height: 315px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+/*# sourceMappingURL=all.css.map */

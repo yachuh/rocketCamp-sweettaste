@@ -1,0 +1,38 @@
+html {
+    color: $color-primary;
+}
+
+body {
+    margin: 30px auto;
+    font-family: "PingFang TC";
+}
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 940px;
+    margin: 0px auto;
+}
+
+a {
+    color: $color-primary;
+    text-decoration: none;
+}
+.d-flex {
+    display: flex
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.justify-content-end {
+    justify-content: flex-end;
+}

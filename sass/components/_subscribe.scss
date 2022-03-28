@@ -1,0 +1,65 @@
+
+.subscribe {
+    justify-content: space-between;
+    align-items: center;
+    background: $color-primary;
+    height: 116px;
+    padding: 0px 122px;
+}
+
+.subscribe-logo {
+    align-items: center;
+
+    img {
+        width: 40px;
+        height: 40px;
+    }
+
+    span {
+        font-size: $font-l;
+        color: $color-secondary;
+        margin-left: 20px;
+    }
+}
+
+.mailInputBox {
+    align-items: center;
+    background: $color-secondary;
+    width: 380px;
+    height: 56px;
+    padding: 16px 0px 16px 20px;
+    position: relative;
+
+    .fa-envelope {
+        color: $color-primary;
+        font-size: 24px;
+    }
+
+    input {
+        background: $color-secondary;
+        margin-left: 16px;
+        font-size: $base-font-size;
+        border: none;
+
+        &:focus-visible {
+            outline: none;
+        }
+    }
+
+    button {
+        background: $color-btn;
+        font-size: 16px;
+        color: $color-primary;
+        width: 64px;
+        height: 56px;
+        border: none;
+        position: absolute;
+        right: 0px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($color-btn, 10%);
+            color: darken($color-primary, 10%);
+        }
+    }
+}
